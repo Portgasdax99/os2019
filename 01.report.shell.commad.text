@@ -1,0 +1,36 @@
+hello word
+Changing password for duya.
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+Mon Apr  1 10:30:52 +07 2019
+PDAx
+x86_64
+Linux PDAx 4.15.0-20-generic #21-Ubuntu SMP Tue Apr 24 06:16:15 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+lely hung
+[ 7395.522208] intel ips 0000:00:1f.6: ME failed to update for more than 1s, likely hung
+[ 7395.750213] intel ips 0000:00:1f.6: ME failed to update for more than 1s, likely hung
+[ 7395.954255] intel ips 0000:00:1f.6: ME failed to update for more than 1s, likely hung
+[ 7396.182245] intel ips 0000:00:1f.6: ME failed to update for more than 1s, likely hung
+[ 7396.414224] intel ips 0000:00:1f.6: ME failed to update for more than 1s, likely hung
+[ 7396.646228] intel ips 0000:00:1f.6: ME failed to update for more than 1s, likely hung
+[ 7396.874230] intel ips 0000:00:1f.6: ME failed to update for more than 1s, likely hung
+[ 7397.122237] intel ips 0000:00:1f.6: ME failed to update for more than 1s, likely hung
+[ 7397.474224] intel ips 0000:00:1f.6: ME failed to update for more than 1s, likely hung
+[ 7397.686211] intel ips 0000:00:1f.6: ME failed to update for more than 1s, likely hung
+0:31:20 up  2:03,  1 user,  load average: 1,47, 1,04, 0,66
+duya     tty7         2019-04-01 08:28 (:0)
+uid=1000(duya) gid=1000(duya) groups=1000(duya),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),112(lpadmin),127(sambashare)
+wtmp begins Mon Apr  1 08:33:04 2019
+Command 'finger' not found, but can be installed with:
+ 10:31:50 up  2:03,  1 user,  load average: 1,06, 0,98, 0,66
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+duya     tty7     :0               08:28    2:03m  2:45   0.82s cinnamon-sessio
+
+
+
+
+
+
+
