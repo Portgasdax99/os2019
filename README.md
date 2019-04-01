@@ -10,6 +10,7 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: Nguyen Duy Anh
-* ID: BI8-012
+* Name: *Put your name here*
+* ID: *Put your ID here*
+
 
