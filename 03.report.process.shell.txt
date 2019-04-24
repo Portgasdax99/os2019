@@ -22,8 +22,8 @@ duya@PDAx:~$ ps man | grep gnome-calculator
  5720 pts/0    -      0:00 grep --color=auto gnome-calculator
 duya@PDAx:~$ cat /proc/5709/status
 State:	S (sleeping)
-duya@PDAx:~$ kill -s STOP  5787
-duya@PDAx:~$ kill -s CONT  5787
-duya@PDAx:~$ kill -s KILL  5787
+duya@PDAx:~$ kill -s STOP   5709
+duya@PDAx:~$ kill -s CONT   5709
+duya@PDAx:~$ kill -s KILL   5709
 
 
