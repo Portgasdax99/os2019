@@ -1,0 +1,20 @@
+duya@PDAx:~$ ls -la | grep list
+duya@PDAx:~$ wc -l /etc/passwd
+41 /etc/passwd
+duya@PDAx:~$ free
+              total        used        free      shared  buff/cache   available
+Mem:        3705444     1715736      364740      358768     1624968     1367520
+Swap:       2097148           0     2097148
+
+duduya@PDAx:~$ cat /proc/cpuinfo | grep processor | wc -l
+4
+
+duya@PDAx:~$ find /home/duya/Pictures -name "*.jpg" | wc -l
+2
+
+
+ 
+ 
+
+
+
