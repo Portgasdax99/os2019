@@ -2,9 +2,8 @@ duya@PDAx:~$ ls -la | grep list
 duya@PDAx:~$ wc -l /etc/passwd
 41 /etc/passwd
 duya@PDAx:~$ free
-              total        used        free      shared  buff/cache   available
-Mem:        3705444     1173336     1488152      238048     1043956     2064816
-Swap:       2097148           0     2097148
+              total        
+Mem:        3705444     
 
 duduya@PDAx:~$ cat /proc/cpuinfo | grep processor | wc -l
 4
