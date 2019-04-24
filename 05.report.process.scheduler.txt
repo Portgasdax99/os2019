@@ -1,0 +1,18 @@
+duya@PDAx:~$ grep systemd /proc/sched_debug
+ S        systemd     1      1736.090495      3749   120         0.000000      7010.271594         0.000000 0 0 /autogroup-2
+ Ssystemd-timesyn 11739        14.693978        27   120         0.000000        67.669084         0.000000 0 0 /autogroup-166
+ Ssystemd-journal 11743       435.912421      3148   119         0.000000      2096.043722         0.000000 0 0 /autogroup-167
+ S  systemd-udevd 26516         7.040158        79   120         0.000000        69.656058         0.000000 0 0 /autogroup-179
+ S systemd-logind   698       858.267099    153462   120         0.000000      3421.219165         0.000000 0 0 /autogroup-60
+ S        systemd  1316        90.530894       123   120         0.000000       138.497955         0.000000 0 0 /autogroup-94
+ Ssystemd-resolve 11734        88.131898       446   120         0.000000       297.687142         0.000000 0 0 /autogroup-165
+duya@PDAx:~$ grep switch /proc/1/sched
+nr_switches                                  :                 3749
+nr_voluntary_switches                        :                 2316
+nr_involuntary_switches                      :                 1433
+duya@PDAx:~$ grep switch /proc/11734/sched
+nr_switches                                  :                  454
+nr_voluntary_switches                        :                  437
+nr_involuntary_switches                      :                   17
+
+
