@@ -5,7 +5,7 @@ duya@PDAx:~$ free
               total        used        free      shared  buff/cache   available
 Mem:        3705444     1715736      364740      358768     1624968     1367520
 Swap:       2097148           0     2097148
-
+git co
 duduya@PDAx:~$ cat /proc/cpuinfo | grep processor | wc -l
 4
 
