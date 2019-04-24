@@ -1,0 +1,30 @@
+duya@PDAx:~$ ls -la | grep list
+duya@PDAx:~$ wc -l /etc/passwd
+41 /etc/passwd
+duya@PDAx:~$ free
+              total        used        free      shared  buff/cache   available
+Mem:        3705444     1173336     1488152      238048     1043956     2064816
+Swap:       2097148           0     2097148
+
+duya@PDAx:~$  lscpu
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              4
+On-line CPU(s) list: 0-3
+Thread(s) per core:  2
+Core(s) per socket:  2
+Socket(s):           1
+ =>>>>>
+ so in my computer has 2cpu sockets.
+ Socket(s):           1
+ Each CPU socket has 2 physical cores. Hence, the computer has 2 physical cores in total.
+duya@PDAx:~$ find /home/duya/Pictures -name "*.jpg" | wc -l
+2
+
+
+ 
+ 
+
+
+
