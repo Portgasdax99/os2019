@@ -1,0 +1,8 @@
+duya@PDAx:~$ ps -e | grep firefox
+ 2146 ?        00:00:11 firefox
+duya@PDAx:~$ ps -o nlwp 2146
+NLWP
+  64
+duya@PDAx:~$ ls /proc/2146/task | wc -w
+61
+
