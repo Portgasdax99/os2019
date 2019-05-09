@@ -11,15 +11,15 @@ typedef struct{
 }item;
  
  item buff[buff_size];
- int frist = 0;
+ int first = 0;
  int last =0;
   
-void product(item*1){
-    while ((frist + 1)%buff_size ==last){
+void product(item*i){
+    while ((first + 1)%buff_size ==last){
         //do nothing 
     }
-    memcmp (&buff[frist],i,sizeof(item));
-    frist = (frist+1)% buff_size;
+    memcmp (&buff[first],i,sizeof(item));
+    first = (first+1)% buff_size;
 }
 
 
@@ -33,7 +33,7 @@ item * inititem(char type,int amount,char unit){
 
 item *consume(){
     item *i = malloc(sizeof(item));
-    while (frist == last){
+    while (first == last){
         //do nothing
     }
     memcmp (i,&buff[last],sizeof(item));
@@ -43,15 +43,15 @@ item *consume(){
 
 
 void *productThread(void *para){
-    item*o1=inititem('1',2,'0');
-    item *o2=inititem('0',4,'0');
-    item *o3=inititem('1',3,'1');
+    item*o1=inititem('1',2,'1');
+    item *o2=inititem('0',3,'0');
+    item *o3=inititem('0',4,'1');
     product(o1);
     product(o2);
     product(o3);
 }
 
-vodi display(item*i){
+void display(item*i){
     printf("Type : %c Amount(s): %d Unit: %c\n",i->amount,i->type,i->unit);
 }
 
@@ -61,8 +61,8 @@ void *consumer(void *para){
 }
 
 int main(){
-    pthread_t tid1;
-    pthread_create(&tid1, NULL, producer, NULL);
+    pthread_t tid1,tid2;
+    pthread_create(&tid1, NULL, productThread, NULL);
 	pthread_join(tid1, NULL);
  	pthread_create(&tid2, NULL, consumer, NULL);
 	pthread_join(tid2, NULL);
