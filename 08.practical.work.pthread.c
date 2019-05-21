@@ -66,10 +66,9 @@ int main(){
  	pthread_create(&tid2, NULL, consumer, NULL);
     pthread_join(tid1, NULL);
 	pthread_join(tid2, NULL);
-
-        printf("After produce: First: %d Last %d \n", first, last);
-        consume();
-        printf("After consume: First: %d Last %d \n", first, last);
+    printf("After produce: First: %d Last %d \n", first, last);
+    consume();
+    printf("After consume: First: %d Last %d \n", first, last);
 	return 0;
 }
 
