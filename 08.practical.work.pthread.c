@@ -59,17 +59,16 @@ void *consumer(void *para){
     display(consume());
     display(consume());
 }
-
+ 
 int main(){
     pthread_t tid1,tid2;
-    pthread_create(&tid1, NULL, productThread, NULL);
- 	pthread_create(&tid2, NULL, consumer, NULL);
-    pthread_join(tid1, NULL);
-	pthread_join(tid2, NULL);
-    printf("After produce: First: %d Last %d \n", first, last);
+    pthread_create(&tid1,NULL,productThread,NULL);
+    pthread_create(&tid2,NULL,consumer,NULL);
+    pthread_joint(tid1,NULL);
+    pthread_joint(tid2,NULL);
+    printf("after product : Frist: %d Last %d \n",frist,last);
     consume();
-    printf("After consume: First: %d Last %d \n", first, last);
-	return 0;
+    printf("after consume : Frist: %d Last %d \n",first,last);
+    return 0;
 }
-
 
